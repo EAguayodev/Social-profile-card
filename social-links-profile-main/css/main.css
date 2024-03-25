@@ -55,10 +55,6 @@ body{
     margin: 40px 70px;
 }
 
-/* .link__box{
-    padding: 9rem;
-} */
-
 .btn {
     background-color: var(--saturated-blue);
     color: var(--White);
@@ -66,7 +62,6 @@ body{
     
 }
 .btn__anchor-1 {
-    font-family: "Inter", sans-serif;
     padding: 15px 80px;
 }
 
