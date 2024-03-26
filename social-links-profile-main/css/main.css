@@ -102,5 +102,18 @@ body{
 }
 
 @media(max-width: 600px){
-    
+    @media(max-width: 768px){
+    .card{
+        height: 579px;
+        width: 327px;
+    }
+
+    .card h4{
+        font-size: 18px;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+}
 }
