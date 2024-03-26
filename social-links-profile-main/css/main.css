@@ -46,6 +46,8 @@ body{
 }
 .card small{
     color: var(--White);
+    text-align: center;
+    padding-top: 1rem;
 }
 
 .profile__avatar {
@@ -55,32 +57,50 @@ body{
     margin: 40px 70px;
 }
 
+.anchor__box{
+    padding: 1.5rem 0;
+} 
+
 .btn {
     background-color: var(--saturated-blue);
     color: var(--White);
     text-decoration: none;
-    
+    border-radius: 5px;
 }
+
+.btn:hover{
+    background: #263762;
+}
+
 .btn__anchor-1 {
-    padding: 15px 80px;
+    font-family: "Inter", sans-serif;
+    padding: 15px 7rem;
 }
 
 .btn__anchor-2 {
-    margin: 5rem 0 0 0;
+    position: relative;
+    top: 1.5rem;
+    padding: 15px 5rem;
 }
 
 .btn__anchor-3 {
-
+    position: relative;
+    top: 3rem;
+    padding: 14px 6.7rem;
 }
 
 .btn__anchor-4 {
-
+    position: relative;
+    top: 3rem;
+    padding: 14px 6.7rem;
 }
 
 .btn__anchor-5 {
-
+    position: relative;
+    top: 3rem;
+    padding: 14px 7rem;
 }
 
-.btn__anchor-6 {
-    margin: 25rem 0 0 0;
+@media(max-width: 600px){
+    
 }
