@@ -55,6 +55,8 @@ body{
     width: 88px;
     height: 88px;
     margin: 40px 70px;
+    position: relative;
+    left: 1rem;
 }
 
 .anchor__box{
