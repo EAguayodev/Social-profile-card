@@ -20,6 +20,9 @@ body{
     background: var(--saturated-blue);
     font-size: 14px;
     font-family: "Inter", sans-serif;
+    display: grid;
+    height: 100vh;
+    place-content: center;
 }
 
 .card {
