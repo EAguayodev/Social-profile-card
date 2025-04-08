@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,10 +16,10 @@
 
 body{
     background: var(--saturated-blue);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Inter", sans-serif;
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     place-content: center;
 }
 
@@ -35,9 +33,9 @@ body{
     height: 611px;
 }
 
-.card h4{
+.card h1{
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--White);
 }
@@ -47,22 +45,24 @@ body{
     font-weight: 600;
     margin-top: 1rem;
 }
-.card small{
+
+.card, p:nth-child(2){
     color: var(--White);
     text-align: center;
     padding-top: 1rem;
 }
 
 .profile__avatar {
+    display: block;
     border-radius: 50px;
     width: 88px;
     height: 88px;
-    margin: 40px 70px;
-    position: relative;
-    left: 1rem;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 .anchor__box{
+    list-style: none;
     padding: 1.5rem 0;
 } 
 
@@ -77,48 +77,23 @@ body{
     background: #263762;
 }
 
-.btn__anchor-1 {
-    font-family: "Inter", sans-serif;
+.btn__anchor {
+    display: block;
     padding: 15px 7rem;
+    margin: 20px 0;
 }
 
-.btn__anchor-2 {
-    position: relative;
-    top: 1.5rem;
-    padding: 15px 5rem;
-}
+  @media(max-width: 768px) {
+      .card {
+          height: 579px;
+          width: 327px;
+      }
 
-.btn__anchor-3 {
-    position: relative;
-    top: 3rem;
-    padding: 14px 6.7rem;
-}
+      .card h1 {
+          font-size: 1.125rem;
+      }
 
-.btn__anchor-4 {
-    position: relative;
-    top: 3rem;
-    padding: 14px 6.7rem;
-}
-
-.btn__anchor-5 {
-    position: relative;
-    top: 3rem;
-    padding: 14px 7rem;
-}
-
-@media(max-width: 600px){
-    @media(max-width: 768px){
-    .card{
-        height: 579px;
-        width: 327px;
-    }
-
-    .card h4{
-        font-size: 18px;
-    }
-
-    .card p{
-        font-size: 12px;
-    }
-}
-}
+      .card p {
+          font-size: 0.75rem;
+      }
+  }
